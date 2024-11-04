@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+body {
+	background: #cccccc;
+	font-family: "IBM Plex Sans", sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+
+.resources {
+	gap: 50px;
+	font-size: 28px;
+	font-weight: 400;
+	position: absolute;
+	top: 80px;
+	left: 45px;
+}
+.resources_title {
+	font-size: 32px;
+	font-weight: 300;
+	padding-bottom: 20px;
+}
+.counter_coffee {
+	background-color: #fff;
+	border-radius: 4%;
+	width: 210px;
+	border: 2px solid black;
+}
+.counter_beans {
+	background-color: #fff;
+	border-radius: 4%;
+	width: 210px;
+	border: 2px solid black;
+}
+.money {
+	background-color: #fff;
+	border-radius: 4%;
+	width: 210px;
+	border: 2px solid black;
+}
+
+.main_title {
+	font-size: 52px;
+	text-align: center;
+	margin-top: 80px;
+	font-weight: 800;
+}
+
+.btn_maker {
+	width: 250px;
+	height: 160px;		
+	font-size: 22px;
+	background: lightblue;
+	border-radius: 4%;
+	transition: 0.2s;
+	cursor: pointer;
+}
+.btn_maker:active {
+	transform:scale(0.98);
+	transition: 0.2s;
+	filter: brightness(0.9);	
+}
+
+.buy_hop {
+	width: 250px;
+	height: 160px;
+	background-color: lightyellow;
+	font-size: 22px;
+	border-radius: 4%;
+	transition: 0.2s;
+	cursor: pointer;
+
+
+}
+.buy_hop:active {
+	transform:scale(0.98);	
+	transition: 0.2s;
+	filter: blur(none);
+	filter: brightness(0.9);
+
+}
+.btn_sell {
+	width: 250px;
+	height: 160px;
+	background-color: lightseagreen;
+	font-size: 22px;	
+	border-radius: 4%;
+	transition: 0.2s;
+	cursor: pointer;
+
+}
+.btn_sell:active {
+	transform:scale(0.98);	
+	transition: 0.2s;
+	filter: brightness(0.9);
+}
+
+.main {
+margin-top:120px;
+}
+
+.section {
+	display: flex;
+	gap: 80px;
+	place-content: center;
+}
+
