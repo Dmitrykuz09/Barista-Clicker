@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Симулятор Бариста</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets\cup-icon.png" />
+  </head>
+  <body>
+    <h1 class="main_title">Симулятор Бариста</h1>
+    <main class="main">
+      <div class="resources">
+        <h1 class="resources_title">Ресурсы:</h1>
+        <div class="counter_coffee">
+          <p>Кофе: <span class="counter_c">0</span></p>
+        </div>
+
+        <div class="counter_beans">
+          <p>Зёрна: <span class="counter_b">50</span></p>
+        </div>
+
+        <div class="money">
+          <p>Деньги: <span class="counter_m">0</span>$</p>
+        </div>
+      </div>
+      <section class="section">
+        <button onclick="incrementMaker(), SoundPour()" class="btn_maker">
+          <audio id="pour-sound" src="./sound/pour.mp3"></audio>
+          Сварить кофе
+        </button>
+
+        <button onclick="incrementBeans(), SoundBeans()" class="buy_hop">
+          <audio id="beans-sound" src="./sound/beans.mp3"></audio>
+          Купить зёрна
+        </button>
+
+        <button onclick="incrementMoney(), SoundMoney()" class="btn_sell">
+          <audio id="money-sound" src="./sound/cash.mp3"></audio>
+          Продать
+        </button>
+      </section>
+      <p>Продажа 1 чашки кофе = Заработок 2$</p>
+      <p>Покупка 50 зерна = Стоимость 1$</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
